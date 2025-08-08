@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "contexts/userContext.jsx", "app/(auth)/_layout.jsx", "app/(auth)/register.jsx", "app/(auth)/login.jsx", "app/_layout.jsx", "app/(tabs)/_layout.jsx", "app/(tabs)/about.jsx", "app/(tabs)/home.jsx", "hooks/useUser.jsx"  ]
 }
