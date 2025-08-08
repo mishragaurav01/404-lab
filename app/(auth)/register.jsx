@@ -2,14 +2,21 @@ import { Keyboard, KeyboardAvoidingView, StyleSheet, Text, TouchableWithoutFeedb
 import { Button, TextInput } from 'react-native-paper'
 import React, { useState } from 'react'
 import { Link } from 'expo-router'
+import { useUser } from '@/hooks/useUser'
 
 const register = () => {
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
-  const handleLogin = () => {
-    console.log("Registration form Submitted", email, password)
+  const {register} = useUser()
+
+  const handleLogin = async () => {
+    try {
+      await register(email, password)
+    } catch (error) {
+      
+    }
   }
 
   return (
