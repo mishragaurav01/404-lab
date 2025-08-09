@@ -3,7 +3,7 @@ import React from 'react'
 import { Tabs } from 'expo-router'
 
 
-const RootLayout = () => {
+const TabLayout = () => {
   return (
     <Tabs>
       <Tabs.Screen name='home' options={{ title: "Home" }} />
@@ -12,4 +12,4 @@ const RootLayout = () => {
   )
 }
 
-export default RootLayout
+export default TabLayout

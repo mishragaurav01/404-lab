@@ -1,7 +1,7 @@
 import { Keyboard, KeyboardAvoidingView, Pressable, StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native'
 import { Button, TextInput } from 'react-native-paper'
 import React, { useState } from 'react'
-import { Link } from 'expo-router'
+import { Link, router } from 'expo-router'
 import { useUser } from '@/hooks/useUser'
 
 const login = () => {
@@ -10,12 +10,15 @@ const login = () => {
   const [password, setPassword] = useState('')
   const { login } = useUser()
 
-  const handleLogin = async () => {
-    try {
-      await login(email, password)
-    } catch (error) {
+  const handleLogin =  () => {
+    // try {
+    //   await login(email, password)
+    // } catch (error) {
       
-    }
+    // }
+    router.replace('/(tabs)/home');
+    console.warn('Login function not implemented yet') // Placeholder for login functionality
+    
   }
 
 

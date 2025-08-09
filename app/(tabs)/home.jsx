@@ -1,10 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import Calender from '@/components/ui/DateList'
 
 const Home = () => {
   return (
     <View style={styles.container}>
       <Text>Home</Text>
+      <Calender/>
     </View>
   )
 }
