@@ -10,12 +10,12 @@ const login = () => {
   const [password, setPassword] = useState('')
   const { login } = useUser()
 
-  const handleLogin =  () => {
-    // try {
-    //   await login(email, password)
-    // } catch (error) {
+  const handleLogin =  async () => {
+    try {
+      await login(email, password)
+    } catch (error) {
       
-    // }
+    }
     router.replace('/(tabs)/home');
     console.warn('Login function not implemented yet') // Placeholder for login functionality
     
